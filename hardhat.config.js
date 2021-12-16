@@ -5,7 +5,9 @@ const projectId = 'bc1ae99807e34eabb67a5272799dcba0';
 const privateKey = fs.readFileSync('.secret').toString();
 module.exports = {
   networks: {
-    hardhat: {},
+    hardhat: {
+      chainId: 1337
+    },
     mumbai: {
       url: `https://polygon-mumbai.infura.io/v3/${projectId}`,
       accounts: [privateKey]

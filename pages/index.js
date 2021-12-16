@@ -35,6 +35,7 @@ export default function Home() {
         return item;
       })
     );
+    console.log(items);
     setNfts(items);
     setLoadingState('loaded');
   }
@@ -61,7 +62,7 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4">
           {nfts.map((nft, i) => (
             <div key={i} className="border shadow rounded-xl overflow-hidden">
-              <Image src={nft.image} alt={nft.name} />
+              <Image src={nft.image} alt={nft.name} width={350} height={350} />
               <div className="p-4">
                 <p style={{ height: '64px' }} className="text-2xl font-semibold">
                   {nft.name}
