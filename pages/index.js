@@ -76,7 +76,7 @@ export default function Home() {
                 <p className="text-2xl mb-4 font-bold text-white">{nft.price} ETH</p>
                 <button
                   className="w-full bg-pink-500 text-white font-bold py-2 px-12 rounded"
-                  onlick={() => buyNft(nft)}
+                  onClick={() => buyNft(nft)}
                 >
                   Buy
                 </button>
